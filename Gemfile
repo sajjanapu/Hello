@@ -56,6 +56,11 @@ gem 'turbolinks'
 gem 'jbuilder',             '~> 2.0'
 gem 'sdoc',                 '0.4.0', group: :doc
 
+group :production do
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+end
+
 group :development, :test do
   gem 'sqlite3'     
   gem 'byebug',      '3.4.0'
